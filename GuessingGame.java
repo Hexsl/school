@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 public class GuessingGame
 {
 	public static void main(String[] args) {
-	    // Initialization of scanner object for user input through a CLI.
+		// Initialization of scanner object for user input through a CLI.
 		Scanner scan = new Scanner(System.in);
 		
 		// Initialization of an object that creates "random" numbers.
