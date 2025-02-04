@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.InputMismatchException;
 
-public class GuessingGame
+public class Main
 {
 	public static void main(String[] args) {
 	    // Initialization of scanner object for user input through a CLI.
@@ -49,6 +49,8 @@ public class GuessingGame
 		// Tell the user if they've made too many guesses.
 		if (count == guessLim) 
 		    System.out.println("\nSorry, you're out of guesses.");
+		
+		System.out.println("The correct number was " + randomNum + ".");
 		
 		// Close scanner object.
 		scan.close();
