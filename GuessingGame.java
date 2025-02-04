@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.InputMismatchException;
 
-public class GuessingGame
+public class Main
 {
 	public static void main(String[] args) {
 	    // Initialization of scanner object for user input through a CLI.
@@ -30,12 +30,27 @@ public class GuessingGame
 		        break;
 		    }
 		    
+		    // Check the user input and respond accordingly.
 		    if (guess > 10 || guess < 1) {
 		        System.out.println("The number you gave is out of range.");
-		        continue; // -->
-		    } 
+		    } else if (guess > randomNum) {
+		        System.out.println("That number is too high! Try again.");
+		    } else if (guess < randomNum) {
+		        System.out.println("That number is too low! Try again.");
+		    } else {
+		        System.out.println("You got it! Congratulations!");
+		        break;
+		    }
 		    
+		    // Iterate.
+		    count++;
 		}
 		
+		// Tell the user if they've made too many guesses.
+		if (count == guessLim) 
+		    System.out.println("\nSorry, you're out of guesses.");
+		
+		// Close scanner object.
+		scan.close();
 	}
 }
