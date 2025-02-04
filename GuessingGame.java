@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.InputMismatchException;
 
-public class Main
+public class GuessingGame
 {
 	public static void main(String[] args) {
 	    // Initialization of scanner object for user input through a CLI.
