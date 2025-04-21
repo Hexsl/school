@@ -1,4 +1,4 @@
-public abstract class Main
+public abstract class AbstractExample
 {
 	abstract void saySomething();
 	
